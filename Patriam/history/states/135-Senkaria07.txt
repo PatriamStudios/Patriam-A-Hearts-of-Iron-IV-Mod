@@ -8,6 +8,6 @@ state={
 		owner = QAL
         	add_core_of = QAL
    	}
-	manpower=7526
+	manpower=17526
 	buildings_max_level_factor=1.000
 }

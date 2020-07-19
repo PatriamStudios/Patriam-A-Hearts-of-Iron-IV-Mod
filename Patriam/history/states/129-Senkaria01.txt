@@ -9,6 +9,6 @@ state={
         	add_core_of = QAL
 			add_core_of = AHL
    	}
-	manpower=7957
+	manpower=12957
 	buildings_max_level_factor=1.000
 }

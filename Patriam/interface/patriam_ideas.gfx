@@ -8,4 +8,24 @@ spriteTypes = {
 		name = "GFX_idea_three_houses"
 		textureFile = "gfx/interface/ideas/three_houses.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_SRQ_imperial_disintegration"
+		texturefile = "gfx/interface/ideas/SRQ_idea1.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_idea_SRQ_radical_violence"
+		texturefile = "gfx/interface/ideas/SRQ_idea2.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_SRQ_no_support"
+		texturefile = "gfx/interface/ideas/SRQ_idea3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SRQ_disorganized_armies"
+		texturefile = "gfx/interface/ideas/SRQ_idea4.dds"
+	}
 }

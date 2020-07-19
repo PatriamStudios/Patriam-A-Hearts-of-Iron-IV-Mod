@@ -1,0 +1,82 @@
+ideas = {
+	country = {
+		imperial_disintegration = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		
+		radical_violence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				stability_weekly = -0.01
+				production_speed_buildings_factor = -0.05
+				political_power_gain = -0.1
+			}
+		}
+
+		no_support = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				political_power_factor = -0.5
+			}
+		}
+
+		disorganized_armies = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				offence = -0.30
+				defence = -0.30
+				army_morale_factor = -0.20
+				army_org_factor = -0.25
+				training_time_army_factor = 0.5
+				
+			}
+		}
+	}
+}
