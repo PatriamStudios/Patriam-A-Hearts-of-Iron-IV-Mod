@@ -10,13 +10,13 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_SRQ_imperial_disintegration"
-		texturefile = "gfx/interface/ideas/SRQ_idea1.dds"
+		name = "GFX_idea_imperial_disintegration"
+		texturefile = "gfx/interface/ideas/imperial_disintegration.dds"
 	}		
 	
 	spriteType = {
-		name = "GFX_idea_SRQ_radical_violence"
-		texturefile = "gfx/interface/ideas/SRQ_idea2.dds"
+		name = "GFX_idea_radical_violence"
+		texturefile = "gfx/interface/ideas/radical_violence.dds"
 	}	
 	
 	spriteType = {
