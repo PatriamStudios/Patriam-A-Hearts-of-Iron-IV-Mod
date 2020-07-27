@@ -7,7 +7,6 @@ guiTypes = {
 			width = 1920 
 			height = 1440 
 			min = { width = 100% height = 100% }
-			max = { width = 100% height = 10000 }
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -389,15 +388,24 @@ guiTypes = {
 			#clicksound = click_#default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
 		}
-	#	ButtonType = {
-		#	name = "discord_button"
-		#	position = { x=-205 y=340 }
-		#	quadTextureSprite ="discord"
-			#clicksound = click_default
-		#	pdx_tooltip = "MENU_DISCORD"
-		#	web_link = "https://twitter.com/hoi_game"
-	#	}
-	#	}
+		ButtonType = {
+			name = "discord_button"
+			position = { x=-125 y=340 }
+			quadTextureSprite ="GFX_discord_icon"
+			clicksound = click_default
+			pdx_tooltip = "MENU_DISCORD"
+			web_link = "https://twitter.com/hoi_game"
+		}
+
+		ButtonType = {
+			name = "reddit_button"
+			position = { x=-85 y=340 }
+			quadTextureSprite ="GFX_reddit_icon"
+			clicksound = click_default
+			pdx_tooltip = "MENU_reddit"
+			web_link = "https://twitter.com/hoi_game"
+		}
+		}
 	}
 
 	## This position needs updated
