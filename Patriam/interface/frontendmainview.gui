@@ -78,6 +78,12 @@ guiTypes = {
 			spriteType = "GFX_frontend_dev_logo"
 			position = { x= 15 y = 15 }
 		}
+
+		iconType ={
+			name = "frontend_patriam_logo"
+			spriteType = "GFX_patriam_logo"
+			position = { x= -350 y=0 }
+		}
 		
 		iconType =
 		{
@@ -188,10 +194,10 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=0 y =470}
+		position = { x=498 y =932}
 		size = { width = 920 height =150}
-		Orientation = center
-		Origo = center		
+		Orientation = bottom
+		Origo = bottom		
 				
 		background = {
 			name = "Background"		

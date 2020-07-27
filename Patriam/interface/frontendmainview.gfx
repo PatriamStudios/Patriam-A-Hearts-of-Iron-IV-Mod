@@ -37,4 +37,9 @@ spriteTypes = {
 		name = "GFX_reddit_icon"
 		texturefile = "gfx/interface/icons/icon_reddit.dds"
 	}
+
+	spriteType = {
+		name = "GFX_patriam_logo"
+		textureFile = "gfx/interface/patriam_logo.dds"
+	}
 }
