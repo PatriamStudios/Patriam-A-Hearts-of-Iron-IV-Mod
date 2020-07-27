@@ -1,6 +1,10 @@
 state={
 	id=274
 	name="STATE_274"
+	history={
+		owner = CKM
+		add_core_of = CKM
+		}
 	provinces={
 		993 3485 3748 3976 5234 5249 5266 5289 5316 
 	}
