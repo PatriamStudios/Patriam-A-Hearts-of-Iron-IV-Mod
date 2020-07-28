@@ -20,12 +20,12 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
-		name = "GFX_idea_SRQ_no_support"
-		texturefile = "gfx/interface/ideas/SRQ_idea3.dds"
+		name = "GFX_idea_no_support"
+		texturefile = "gfx/interface/ideas/no_support.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_idea_SRQ_disorganized_armies"
-		texturefile = "gfx/interface/ideas/SRQ_idea4.dds"
+		name = "GFX_idea_disorganized_armies"
+		texturefile = "gfx/interface/ideas/disorganized_armies.dds"
 	}
 }

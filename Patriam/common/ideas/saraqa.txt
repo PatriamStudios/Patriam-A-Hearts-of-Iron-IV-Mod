@@ -1,7 +1,8 @@
 ideas = {
 	country = {
 		imperial_disintegration = {
-			
+       picture = GFX_idea_imperial_disintegration
+
 			allowed = {
 				always = no
 			}
@@ -11,15 +12,16 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
 			}
 		}
-		
+
 		radical_violence = {
-			
+      picture = GFX_idea_radical_violence
+
 			allowed = {
 				always = no
 			}
@@ -29,7 +31,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				stability_factor = -0.05
 				stability_weekly = -0.01
@@ -39,7 +41,8 @@ ideas = {
 		}
 
 		no_support = {
-			
+     picture = GFX_idea_no_support
+
 			allowed = {
 				always = no
 			}
@@ -49,7 +52,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				stability_factor = -0.15
 				war_support_factor = -0.15
@@ -58,7 +61,8 @@ ideas = {
 		}
 
 		disorganized_armies = {
-			
+     picture = GFX_idea_disorganized_armies
+
 			allowed = {
 				always = no
 			}
@@ -68,14 +72,14 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				offence = -0.30
 				defence = -0.30
 				army_morale_factor = -0.20
 				army_org_factor = -0.25
 				training_time_army_factor = 0.5
-				
+
 			}
 		}
 	}
