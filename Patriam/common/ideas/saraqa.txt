@@ -41,6 +41,7 @@ ideas = {
 		}
 
 		no_support = {
+     picture = GFX_idea_no_support
 
 			allowed = {
 				always = no
@@ -60,6 +61,7 @@ ideas = {
 		}
 
 		disorganized_armies = {
+     picture = GFX_idea_disorganized_armies
 
 			allowed = {
 				always = no
