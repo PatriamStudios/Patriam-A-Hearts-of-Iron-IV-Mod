@@ -1,0 +1,17 @@
+add_namespace = patriamsimoswork
+
+##Event: Two Thrones, One House
+country_event = {
+	id = patriamsimoswork.1
+	title = patriamsimoswork.1.title
+	desc = patriamsimoswork.1.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = patriamsimoswork.1.a
+		ai_chance = { factor = 100}
+		The Lorenthian army will be under direct control of the Baeliff and they will be offically annexed after the wedding.
+	}
+}
