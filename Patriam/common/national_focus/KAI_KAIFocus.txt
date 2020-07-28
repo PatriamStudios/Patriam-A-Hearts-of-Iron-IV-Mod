@@ -1,0 +1,386 @@
+focus_tree = {
+	id = KAIFocus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KAI
+		}
+	}
+	#Focus for Reform The Imperial Government
+	focus = {
+		id = KAI_reform_the_imperial_government
+		icon = GFX_goal_unknown
+		x = 12
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_my_own_legacy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for My Ancestors Legacy
+	focus = {
+		id = KAI_my_ancestors_legacy
+		icon = GFX_goal_unknown
+		x = 28
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_long_divided_the_dynasty_must_unite }
+		mutually_exclusive = { focus = KAI_my_own_legacy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strike The Cultists
+	focus = {
+		id = KAI_strike_the_cultists
+		icon = GFX_goal_unknown
+		x = 30
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_they_made_ready_for_war }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Dynasty
+	focus = {
+		id = KAI_the_dynasty
+		icon = GFX_focus_spa_eliminate_the_carlists
+		x = 20
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Imperial Council
+	focus = {
+		id = KAI_the_imperial_council
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 18
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_dynasty }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Da Xin's Revolt
+	focus = {
+		id = KAI_da_xins_revolt
+		icon = GFX_goal_unknown
+		x = 22
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_dynasty }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for State of the Imperial Dynasty
+	focus = {
+		id = KAI_state_of_the_imperial_dynasty
+		icon = GFX_goal_unknown
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_da_xins_revolt 
+		}
+		prerequisite = { 
+			focus = KAI_the_imperial_council 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A New Era
+	focus = {
+		id = KAI_a_new_era
+		icon = GFX_goal_unknown
+		x = 20
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_state_of_the_imperial_dynasty }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Rebellion
+	focus = {
+		id = KAI_the_rebellion
+		icon = GFX_goal_unknown
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_a_new_era }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Armed Peasantry
+	focus = {
+		id = KAI_the_armed_peasantry
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_rebellion }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reconquer The Merchants
+	focus = {
+		id = KAI_reconquer_the_merchants
+		icon = GFX_goal_unknown
+		x = 26
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_they_made_ready_for_war }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Hakkajin Order
+	focus = {
+		id = KAI_the_hakkajin_order
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_rebellion }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Inakei Riders
+	focus = {
+		id = KAI_the_inakei_riders
+		icon = GFX_goal_unknown
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_the_hakkajin_order 
+		}
+		prerequisite = { 
+			focus = KAI_the_armed_peasantry 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strengthen Imperial Power
+	focus = {
+		id = KAI_strengthen_imperial_power
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_inakei_riders }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Grand Council
+	focus = {
+		id = KAI_the_grand_council
+		icon = GFX_goal_unknown
+		x = 10
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_inakei_riders }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Long Divided, The Dynasty Must Unite
+	focus = {
+		id = KAI_long_divided_the_dynasty_must_unite
+		icon = GFX_goal_unknown
+		x = 20
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_the_equipment_problem 
+		}
+		prerequisite = { 
+			focus = KAI_the_grand_council 
+		}
+		prerequisite = { 
+			focus = KAI_strengthen_imperial_power 
+		}
+		prerequisite = { 
+			focus = KAI_a_new_era 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Equipment Problem
+	focus = {
+		id = KAI_the_equipment_problem
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_inakei_riders }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for My Own Legacy
+	focus = {
+		id = KAI_my_own_legacy
+		icon = GFX_goal_unknown
+		x = 12
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_long_divided_the_dynasty_must_unite }
+		mutually_exclusive = { focus = KAI_my_ancestors_legacy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reform The Imperial Army
+	focus = {
+		id = KAI_reform_the_imperial_army
+		icon = GFX_goal_unknown
+		x = 10
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_my_own_legacy }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reform The Societal Structure
+	focus = {
+		id = KAI_reform_the_societal_structure
+		icon = GFX_goal_unknown
+		x = 14
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_my_own_legacy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The New Dynasty
+	focus = {
+		id = KAI_the_new_dynasty
+		icon = GFX_goal_unknown
+		x = 12
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_reform_the_societal_structure 
+		}
+		prerequisite = { 
+			focus = KAI_reform_the_imperial_army 
+		}
+		prerequisite = { 
+			focus = KAI_reform_the_imperial_government 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for They Made Ready For War
+	focus = {
+		id = KAI_they_made_ready_for_war
+		icon = GFX_goal_unknown
+		x = 28
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_my_ancestors_legacy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Destroy The False Dynasty
+	focus = {
+		id = KAI_destroy_the_false_dynasty
+		icon = GFX_goal_unknown
+		x = 28
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_they_made_ready_for_war }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
