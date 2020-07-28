@@ -1,0 +1,326 @@
+focus_tree = {
+	id = Arbindrothnia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARB
+		}
+	}
+	#Focus for We Who Rise
+	focus = {
+		id = ARB_we_who_rise
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Rebuild the Guard
+	focus = {
+		id = ARB_rebuild_the_guard
+		icon = GFX_goal_rhineland
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_we_who_rise }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 10000
+army_experience= 50
+add_war_support= 15
+		}
+	}
+
+	#Focus for The Lord General
+	focus = {
+		id = ARB_the_lord_general
+		icon = GFX_focus_ger_oppose_hitler
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_rebuild_the_guard }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Cross For A Veteran
+	focus = {
+		id = ARB_a_cross_for_a_veteran
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_the_lord_general }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Honor the League Wars
+	focus = {
+		id = ARB_honor_the_league_wars
+		icon = GFX_goal_generic_alliance
+		x = 18
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Beaten But Not Broken
+	focus = {
+		id = ARB_beaten_but_not_broken
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_honor_the_league_wars }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_national_unity= 10
+		}
+	}
+
+	#Focus for A Culture Of Conflict
+	focus = {
+		id = ARB_a_culture_of_conflict
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_beaten_but_not_broken }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mobolize the Cross Bearers
+	focus = {
+		id = ARB_mobolize_the_cross_bearers
+		icon = GFX_focus_generic_little_entente
+		x = 16
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_a_rising_eagle }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Rising Eagle
+	focus = {
+		id = ARB_a_rising_eagle
+		icon = GFX_goal_support_fascism
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ARB_a_cross_for_a_veteran 
+		}
+		prerequisite = { 
+			focus = ARB_a_culture_of_conflict 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tear Down Ardiff
+	focus = {
+		id = ARB_tear_down_ardiff
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 16
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ARB_an_industry_of_conflict 
+		}
+		prerequisite = { 
+			focus = ARB_mobolize_the_cross_bearers 
+		}
+		prerequisite = { 
+			focus = ARB_demand_our_western_losses 
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { type = annex_everything 
+target = ARD}
+		}
+	}
+
+	#Focus for An Industry Of Conflict
+	focus = {
+		id = ARB_an_industry_of_conflict
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 13
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_a_rising_eagle }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand Our Western Losses
+	focus = {
+		id = ARB_demand_our_western_losses
+		icon = GFX_goal_generic_major_war
+		x = 19
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_a_rising_eagle }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Vengeance On Alexia
+	focus = {
+		id = ARB_vengeance_on_alexia
+		icon = GFX_goal_generic_neutrality_focus
+		x = 14
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_tear_down_ardiff }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Enslave Rebels
+	focus = {
+		id = ARB_enslave_rebels
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 18
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_tear_down_ardiff }
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Central Brotherhood
+	focus = {
+		id = ARB_central_brotherhood
+		icon = GFX_goal_tripartite_pact
+		x = 16
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_vengeance_on_alexia }
+		search_filters = { FOCUS_FILTER_TFV_AUTONOMY } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war_with= (ALEX)
+		}
+		completion_reward = {
+			puppet= THE
+puppet= CAR
+create_faction = 'Central Brotherhood'
+		}
+	}
+
+	#Focus for National Purity
+	focus = {
+		id = ARB_national_purity
+		icon = GFX_focus_CZE_german_puppet
+		x = 18
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_enslave_rebels }
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 25
+add_manpower= -5000
+		}
+	}
+
+	#Focus for Southern Supression
+	focus = {
+		id = ARB_southern_supression
+		icon = GFX_goal_generic_military_deal
+		x = 16
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ARB_central_brotherhood }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			declare_war_on= { 
+target = BAE 
+type = annex_everything}
+declare_war_on= { 
+target = SIN
+type = annex_everything}
+		}
+	}
+
+	#Focus for A War In The Worplace
+	focus = {
+		id = ARB_a_war_in_the_worplace
+		icon = GFX_goal_unknown
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

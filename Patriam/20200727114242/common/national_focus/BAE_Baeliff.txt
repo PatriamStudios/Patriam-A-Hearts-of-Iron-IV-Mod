@@ -1,0 +1,559 @@
+focus_tree = {
+	id = Baeliff
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAE
+		}
+	}
+	#Focus for The South United
+	focus = {
+		id = BAE_the_south_united
+		icon = GFX_goal_generic_national_unity
+		x = 12
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_gather_the_weary }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gather The Weary
+	focus = {
+		id = BAE_gather_the_weary
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 12
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_facilitate_the_third_league_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Blame Lorenthians
+	focus = {
+		id = BAE_blame_lorenthians
+		icon = GFX_focus_generic_air_defense
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_cite_the_revolt }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+add_war_support= 5
+		}
+	}
+
+	#Focus for Our Fleet Is...
+	focus = {
+		id = BAE_our_fleet_is
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = dockyard size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER }
+random_owned_controlled_state = { limit = { free_building_slots = { building = dockyard size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER }
+		}
+	}
+
+	#Focus for Retake The Borderlands
+	focus = {
+		id = BAE_retake_the_borderlands
+		icon = GFX_focus_generic_little_entente
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_cite_the_revolt }
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cite the Revolt
+	focus = {
+		id = BAE_cite_the_revolt
+		icon = GFX_goal_generic_wolf_pack
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_put_them_to_work }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 1
+ add_building_construction = {
+ type = arms_factory
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 1
+ add_building_construction = {
+ type = arms_factory
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+add_war_support = 5
+		}
+	}
+
+	#Focus for Grant Them Jobs
+	focus = {
+		id = BAE_grant_them_jobs
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 23
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_reintegrate_the_remnants }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Put Them to Work
+	focus = {
+		id = BAE_put_them_to_work
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_suppress_the_remnants }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } set_state_flag = 2}
+country_event = { days = 1 id = Lorenthia.Protest }
+		}
+	}
+
+	#Focus for Rebuild From The Revolt
+	focus = {
+		id = BAE_rebuild_from_the_revolt
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 19
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_extra_state_shared_building_slots= {
+ add_extra_state_shared_building_slots = 2 
+}
+add_extra_state_shared_building_slots= {
+ add_extra_state_shared_building_slots = 2 
+}
+		}
+	}
+
+	#Focus for Suppress The Remnants
+	focus = {
+		id = BAE_suppress_the_remnants
+		icon = GFX_focus_CZE_german_puppet
+		x = 15
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_rebuild_from_the_revolt }
+		mutually_exclusive = { focus = BAE_reintegrate_the_remnants }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			army_experience= 25
+Add_manpower = -2000
+Add_war_support = 5
+Add_stability = -2
+		}
+	}
+
+	#Focus for Re-Integrate the Remnants
+	focus = {
+		id = BAE_reintegrate_the_remnants
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 21
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_rebuild_from_the_revolt }
+		mutually_exclusive = { focus = BAE_suppress_the_remnants }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 5
+Add_manpower = 2000
+Add_war_support = -2
+Add_stability = 5
+		}
+	}
+
+	#Focus for ...For The High Seas
+	focus = {
+		id = BAE_for_the_high_seas
+		icon = GFX_goal_generic_navy_battleship
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_our_fleet_is }
+		mutually_exclusive = { focus = BAE_to_protect_our_shores }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...To Protect Our Shores
+	focus = {
+		id = BAE_to_protect_our_shores
+		icon = GFX_goal_generic_defence
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_our_fleet_is }
+		mutually_exclusive = { focus = BAE_for_the_high_seas }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for March Upon Their Doorstep
+	focus = {
+		id = BAE_march_upon_their_doorstep
+		icon = GFX_focus_prc_infiltration
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_retake_the_borderlands }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 5
+army_experience= 25
+add_manpower = 1000
+		}
+	}
+
+	#Focus for Take Lorenthian Assets
+	focus = {
+		id = BAE_take_lorenthian_assets
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_blame_lorenthians }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for To War!
+	focus = {
+		id = BAE_to_war
+		icon = GFX_goal_generic_major_war
+		x = 12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAE_take_lorenthian_assets 
+		}
+		prerequisite = { 
+			focus = BAE_march_upon_their_doorstep 
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_claim= CHOOSE STATEadd_state_claim= CHOOSE STATEadd_state_claim= CHOOSE STATEcreate_wargoal= { 
+type = annex_everything 
+target = Loe
+}
+		}
+	}
+
+	#Focus for Grant Them Rights
+	focus = {
+		id = BAE_grant_them_rights
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 23
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_grant_them_jobs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Give Them Back
+	focus = {
+		id = BAE_give_them_back
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_grant_them_rights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Kick Them Out
+	focus = {
+		id = BAE_kick_them_out
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 23
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAE_ally_against_the_common_threat 
+		}
+		prerequisite = { 
+			focus = BAE_southern_kallonian_league 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ally against the common threat
+	focus = {
+		id = BAE_ally_against_the_common_threat
+		icon = GFX_goal_generic_demand_territory
+		x = 23
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAE_their_place_at_our_table 
+		}
+		prerequisite = { 
+			focus = BAE_plan_their_independence 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Help the Sinostrians
+	focus = {
+		id = BAE_help_the_sinostrians
+		icon = GFX_goal_generic_defence
+		x = 26
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_grant_them_rights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Their Place At Our Table
+	focus = {
+		id = BAE_their_place_at_our_table
+		icon = GFX_goal_tfv_can_compromise_with_quebec
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_give_them_back }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Plan Their Independence
+	focus = {
+		id = BAE_plan_their_independence
+		icon = GFX_focus_rom_handle_king
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_help_the_sinostrians }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Lion Reborn...
+	focus = {
+		id = BAE_a_lion_reborn
+		icon = GFX_focus_hol_united_netherlands
+		x = 26
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAE_plan_their_independence 
+		}
+		prerequisite = { 
+			focus = BAE_ally_against_the_common_threat 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Southern Kallonian League
+	focus = {
+		id = BAE_southern_kallonian_league
+		icon = GFX_goal_support_fascism
+		x = 23
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_ally_against_the_common_threat }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Join Our Houses
+	focus = {
+		id = BAE_join_our_houses
+		icon = GFX_focus_generic_royal_wedding
+		x = 20
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAE_their_place_at_our_table 
+		}
+		prerequisite = { 
+			focus = BAE_ally_against_the_common_threat 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Join Us Or Die
+	focus = {
+		id = BAE_join_us_or_die
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 23
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAE_join_our_houses 
+		}
+		prerequisite = { 
+			focus = BAE_kick_them_out 
+		}
+		prerequisite = { 
+			focus = BAE_a_lion_reborn 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Facilitate The Third League War
+	focus = {
+		id = BAE_facilitate_the_third_league_war
+		icon = GFX_goal_generic_demand_territory
+		x = 12
+		y = 7
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_to_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make the North Bow
+	focus = {
+		id = BAE_make_the_north_bow
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 12
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_the_south_united }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Return the Favor
+	focus = {
+		id = BAE_return_the_favor
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		x = 23
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAE_join_us_or_die }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
