@@ -7,6 +7,349 @@ focus_tree = {
 			tag = KAI
 		}
 	}
+	#Focus for The Hordes
+	focus = {
+		id = KAI_the_hordes
+		icon = GFX_goal_unknown
+		x = 4
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_shou_wei_question }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Shou Wei Question
+	focus = {
+		id = KAI_the_shou_wei_question
+		icon = GFX_goal_unknown
+		x = 6
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_peacefully_occupy_tanakojimori 
+			focus = KAI_loot_and_plunder_tanakojimori 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Peacefully Occupy Tanakoji-Mori
+	focus = {
+		id = KAI_peacefully_occupy_tanakojimori
+		icon = GFX_goal_unknown
+		x = 8
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_destroy_the_merchants }
+		mutually_exclusive = { focus = KAI_loot_and_plunder_tanakojimori }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Loot and Plunder Tanakoji-Mori
+	focus = {
+		id = KAI_loot_and_plunder_tanakojimori
+		icon = GFX_goal_unknown
+		x = 4
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_destroy_the_merchants }
+		mutually_exclusive = { focus = KAI_peacefully_occupy_tanakojimori }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Destroy the Merchants
+	focus = {
+		id = KAI_destroy_the_merchants
+		icon = GFX_goal_unknown
+		x = 6
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_adopt_aggressive_policy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Kaikanjei Civil War
+	focus = {
+		id = KAI_the_kaikanjei_civil_war
+		icon = GFX_goal_unknown
+		x = 20
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_break_the_deal 
+			focus = KAI_purge_rebellious_lords 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Purge Rebellious Lords
+	focus = {
+		id = KAI_purge_rebellious_lords
+		icon = GFX_goal_unknown
+		x = 22
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_kudai_crisis }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Break The Deal
+	focus = {
+		id = KAI_break_the_deal
+		icon = GFX_goal_unknown
+		x = 18
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_the_kudai_crisis 
+		}
+		prerequisite = { 
+			focus = KAI_make_a_deal_with_the_devil 
+		}
+		mutually_exclusive = { focus = KAI_break_the_deal }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Kudai Crisis
+	focus = {
+		id = KAI_the_kudai_crisis
+		icon = GFX_goal_unknown
+		x = 20
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_make_a_deal_with_the_devil }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Abolish the Lords System
+	focus = {
+		id = KAI_abolish_the_lords_system
+		icon = GFX_goal_unknown
+		x = 12
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_the_great_rebuild 
+		}
+		prerequisite = { 
+			focus = KAI_the_new_army 
+		}
+		prerequisite = { 
+			focus = KAI_peace_at_last 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Great Rebuild
+	focus = {
+		id = KAI_the_great_rebuild
+		icon = GFX_goal_unknown
+		x = 10
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_peace_at_last }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Approach The Three Cities
+	focus = {
+		id = KAI_approach_the_three_cities
+		icon = GFX_goal_unknown
+		x = 17
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_adopt_diplomatic_policy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hai Fuang Xi's Rebellion
+	focus = {
+		id = KAI_hai_fuang_xis_rebellion
+		icon = GFX_goal_unknown
+		x = 14
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_general_revolt }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The General Revolt
+	focus = {
+		id = KAI_the_general_revolt
+		icon = GFX_goal_unknown
+		x = 12
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_disarm_the_lords 
+		}
+		prerequisite = { 
+			focus = KAI_address_the_concerned_lords 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Address The Concerned Lords
+	focus = {
+		id = KAI_address_the_concerned_lords
+		icon = GFX_goal_unknown
+		x = 11
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_adopt_isolationist_policy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Local Border Defences
+	focus = {
+		id = KAI_expand_local_border_defences
+		icon = GFX_goal_unknown
+		x = 15
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_adopt_isolationist_policy 
+			focus = KAI_adopt_diplomatic_policy 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Adopt Diplomatic Policy
+	focus = {
+		id = KAI_adopt_diplomatic_policy
+		icon = GFX_goal_unknown
+		x = 18
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_new_dynasty }
+		mutually_exclusive = { 
+			focus = KAI_adopt_isolationist_policy 
+		}
+		mutually_exclusive = { 
+			focus = KAI_adopt_aggressive_policy 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Adopt Aggressive Policy
+	focus = {
+		id = KAI_adopt_aggressive_policy
+		icon = GFX_goal_unknown
+		x = 6
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_new_dynasty }
+		mutually_exclusive = { 
+			focus = KAI_adopt_diplomatic_policy 
+		}
+		mutually_exclusive = { 
+			focus = KAI_adopt_aggressive_policy 
+		}
+		mutually_exclusive = { 
+			focus = KAI_ 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for placeholder
+	focus = {
+		id = KAI_tTxvuCHo
+		icon = GFX_goal_unknown
+		x = 40
+		y = 30
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invite Zhao Jyi Kai to The Capital
+	focus = {
+		id = KAI_invite_zhao_jyi_kai_to_the_capital
+		icon = GFX_goal_unknown
+		x = 12
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_general_revolt }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#Focus for Reform The Imperial Government
 	focus = {
 		id = KAI_reform_the_imperial_government
@@ -48,6 +391,42 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = KAI_they_made_ready_for_war }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Akatori Agreement
+	focus = {
+		id = KAI_the_akatori_agreement
+		icon = GFX_goal_unknown
+		x = 19
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_adopt_diplomatic_policy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Balanced Rebuild Focus
+	focus = {
+		id = KAI_balanced_rebuild_focus
+		icon = GFX_goal_unknown
+		x = 27
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_begin_the_rebuild }
+		mutually_exclusive = { 
+			focus = KAI_civilian_rebuild_focus 
+		}
+		mutually_exclusive = { 
+			focus = KAI_ 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
 		ai_will_do = {
 			factor = 1
 		}
@@ -136,7 +515,7 @@ focus_tree = {
 	focus = {
 		id = KAI_the_rebellion
 		icon = GFX_goal_unknown
-		x = 10
+		x = 20
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -151,7 +530,7 @@ focus_tree = {
 	focus = {
 		id = KAI_the_armed_peasantry
 		icon = GFX_goal_unknown
-		x = 9
+		x = 18
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -181,7 +560,7 @@ focus_tree = {
 	focus = {
 		id = KAI_the_hakkajin_order
 		icon = GFX_goal_unknown
-		x = 11
+		x = 22
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -196,7 +575,7 @@ focus_tree = {
 	focus = {
 		id = KAI_the_inakei_riders
 		icon = GFX_goal_unknown
-		x = 10
+		x = 20
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
@@ -216,7 +595,7 @@ focus_tree = {
 	focus = {
 		id = KAI_strengthen_imperial_power
 		icon = GFX_goal_unknown
-		x = 8
+		x = 20
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -231,7 +610,7 @@ focus_tree = {
 	focus = {
 		id = KAI_the_grand_council
 		icon = GFX_goal_unknown
-		x = 10
+		x = 18
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -251,16 +630,13 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = KAI_the_equipment_problem 
+			focus = KAI_strengthen_imperial_power 
 		}
 		prerequisite = { 
 			focus = KAI_the_grand_council 
 		}
 		prerequisite = { 
-			focus = KAI_strengthen_imperial_power 
-		}
-		prerequisite = { 
-			focus = KAI_a_new_era 
+			focus = KAI_the_equipment_problem 
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -272,7 +648,7 @@ focus_tree = {
 	focus = {
 		id = KAI_the_equipment_problem
 		icon = GFX_goal_unknown
-		x = 12
+		x = 22
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -376,6 +752,218 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = KAI_they_made_ready_for_war }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for "It's a long road to Kokujin"
+	focus = {
+		id = KAI_its_a_long_road_to_kokujin
+		icon = GFX_goal_unknown
+		x = 20
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_kaikanjei_civil_war }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cast Out The Diplomatic Policy
+	focus = {
+		id = KAI_cast_out_the_diplomatic_policy
+		icon = GFX_goal_unknown
+		x = 18
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_its_a_long_road_to_kokujin }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Begin The Rebuild
+	focus = {
+		id = KAI_begin_the_rebuild
+		icon = GFX_goal_unknown
+		x = 24
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_its_a_long_road_to_kokujin }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Civilian Rebuild Focus
+	focus = {
+		id = KAI_civilian_rebuild_focus
+		icon = GFX_goal_unknown
+		x = 25
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_begin_the_rebuild }
+		mutually_exclusive = { focus = KAI_balanced_rebuild_focus }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Rebuild Focus
+	focus = {
+		id = KAI_military_rebuild_focus
+		icon = GFX_goal_unknown
+		x = 29
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_begin_the_rebuild }
+		mutually_exclusive = { 
+			focus = KAI_civilian_rebuild_focus 
+		}
+		mutually_exclusive = { 
+			focus = KAI_balanced_rebuild_focus 
+		}
+		mutually_exclusive = { 
+			focus = KAI_ 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Adopt Isolationist Policy
+	focus = {
+		id = KAI_adopt_isolationist_policy
+		icon = GFX_goal_unknown
+		x = 12
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_new_dynasty }
+		mutually_exclusive = { 
+			focus = KAI_adopt_diplomatic_policy 
+		}
+		mutually_exclusive = { 
+			focus = KAI_adopt_aggressive_policy 
+		}
+		mutually_exclusive = { 
+			focus = KAI_ 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Disarm the Lords
+	focus = {
+		id = KAI_disarm_the_lords
+		icon = GFX_goal_unknown
+		x = 13
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_adopt_isolationist_policy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Siege of Xinfei
+	focus = {
+		id = KAI_siege_of_xinfei
+		icon = GFX_goal_unknown
+		x = 10
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_general_revolt }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Air Was Filled With Smoke and Blood
+	focus = {
+		id = KAI_the_air_was_filled_with_smoke_and_blood
+		icon = GFX_goal_unknown
+		x = 12
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_hai_fuang_xis_rebellion 
+		}
+		prerequisite = { 
+			focus = KAI_siege_of_xinfei 
+		}
+		prerequisite = { 
+			focus = KAI_invite_zhao_jyi_kai_to_the_capital 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Peace at Last
+	focus = {
+		id = KAI_peace_at_last
+		icon = GFX_goal_unknown
+		x = 12
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_the_air_was_filled_with_smoke_and_blood }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The New Army
+	focus = {
+		id = KAI_the_new_army
+		icon = GFX_goal_unknown
+		x = 14
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAI_peace_at_last }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make A Deal With The Devil
+	focus = {
+		id = KAI_make_a_deal_with_the_devil
+		icon = GFX_goal_unknown
+		x = 18
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = KAI_approach_the_three_cities 
+		}
+		prerequisite = { 
+			focus = KAI_the_akatori_agreement 
+		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
