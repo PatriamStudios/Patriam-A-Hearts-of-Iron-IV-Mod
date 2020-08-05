@@ -1,6 +1,10 @@
 state={
 	id=275
 	name="STATE_275"
+	history={
+		owner = KCU
+		add_core_of = KCU
+		}
 	provinces={
 		253 1180 2640 2894 3163 3238 3339 3436 3987 4109 4128 4523 4667 4785 5343 5346 5374 5380 5403 
 	}

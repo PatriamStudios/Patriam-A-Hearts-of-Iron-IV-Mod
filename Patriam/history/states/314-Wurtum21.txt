@@ -1,6 +1,10 @@
 state={
 	id=314
 	name="STATE_314"
+	history={
+		owner = PEN
+		add_core_of = PEN
+		}
 	provinces={
 		280 2300 2389 3080 3310 3977 4164 5273 5280 5287 5315 5338 5345 5359 
 	}

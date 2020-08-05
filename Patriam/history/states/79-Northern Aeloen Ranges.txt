@@ -1,6 +1,10 @@
 state={
 	id=79
 	name="Northern Aeloen Ranges"
+	history={
+		owner = ALB
+		add_core_of = ALB
+		}
 	provinces={
 		528 1183 1304 1620 2245 2615 2636 2984 3532 3564 4491 4613 6460 6475 6484 6485 6532 6551 6579 6580 6602 6607 6641 6664 
 	}

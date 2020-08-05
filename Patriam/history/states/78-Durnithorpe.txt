@@ -1,6 +1,10 @@
 state={
 	id=78
 	name="Durnithorpe"
+	history={
+		owner = ALB
+		add_core_of = ALB
+		}
 	provinces={
 		781 1818 2308 3304 3793 4232 4324 6427 6489 6506 6525 6529 6546 6569 6581 6586 6600 
 	}

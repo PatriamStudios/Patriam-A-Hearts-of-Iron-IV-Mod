@@ -1,0 +1,172 @@
+focus_tree = {
+	id = Carnetea
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CAR
+		}
+	}
+	#Focus for Incorporate Our New Lands
+	focus = {
+		id = CAR_incorporate_our_new_lands
+		icon = GFX_goal_generic_position_armies
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CAR_eYhQlqij 
+			focus = CAR_our_demands_accepted 
+			focus = CAR_victory_in_the_north 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Victory In The North
+	focus = {
+		id = CAR_victory_in_the_north
+		icon = GFX_goal_generic_special_forces
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CAR_split_our_brother }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Council of Carentean Lords
+	focus = {
+		id = CAR_council_of_carentean_lords
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Go with Thenithria
+	focus = {
+		id = CAR_go_with_thenithria
+		icon = GFX_goal_generic_improve_relations
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CAR_council_of_carentean_lords }
+		mutually_exclusive = { focus = CAR_align_with_alexia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Align with Alexia
+	focus = {
+		id = CAR_align_with_alexia
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CAR_council_of_carentean_lords }
+		mutually_exclusive = { focus = CAR_go_with_thenithria }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Appease the Rising Eagle
+	focus = {
+		id = CAR_appease_the_rising_eagle
+		icon = GFX_goal_support_democracy
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = CAR_reject_the_request }
+		ai_will_do = {
+			factor = 95
+		}
+	}
+
+	#Focus for Reject the Request
+	focus = {
+		id = CAR_reject_the_request
+		icon = GFX_goal_generic_major_war
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = CAR_appease_the_rising_eagle }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand land from Lorentia
+	focus = {
+		id = CAR_demand_land_from_lorentia
+		icon = GFX_goal_generic_demand_territory
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CAR_go_with_thenithria }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for To War!
+	focus = {
+		id = CAR_eYhQlqij
+		icon = GFX_focus_spa_eliminate_the_carlists
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CAR_demand_land_from_lorentia }
+		mutually_exclusive = { focus = CAR_our_demands_accepted }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our demands Accepted
+	focus = {
+		id = CAR_our_demands_accepted
+		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CAR_demand_land_from_lorentia }
+		mutually_exclusive = { focus = CAR_to_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Split Our Brother
+	focus = {
+		id = CAR_split_our_brother
+		icon = GFX_goal_generic_military_deal
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CAR_align_with_alexia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

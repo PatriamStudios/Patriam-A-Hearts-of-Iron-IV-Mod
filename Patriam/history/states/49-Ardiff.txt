@@ -1,6 +1,10 @@
 state={
 	id=49
 	name="Ardiff"
+	history={
+		owner = ARD
+		add_core_of = ARD
+		}
 	provinces={
 		321 358 995 2090 2102 3297 3375 3829 3886 4262 6893 6912 6916 6925 6959 6964 6982 6987 7025 7029 7066 
 	}

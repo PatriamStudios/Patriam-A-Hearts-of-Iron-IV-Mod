@@ -1,6 +1,10 @@
 state={
 	id=48
 	name="Baeliff"
+	history={
+		owner = BAE
+		add_core_of = BAE
+		}
 	provinces={
 		182 349 2538 2928 3205 3496 3646 4618 7150 7166 7171 7172 7193 7214 7225 
 	}

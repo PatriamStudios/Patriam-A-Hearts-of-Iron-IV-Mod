@@ -1,6 +1,10 @@
 state={
 	id=346
 	name="STATE_346"
+	history={
+		owner = SWS
+		add_core_of = SWS
+		}
 	provinces={
 		2689 2877 3288 3346 3816 4193 4429 4461 4754 4937 4958 4963 4966 4971 4975 
 	}

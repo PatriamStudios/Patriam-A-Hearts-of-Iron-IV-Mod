@@ -86,3 +86,99 @@
  JUB:0 "Jubah Empire"
  JUB_DEF:0 "the Jubah Empire"
  JUB_ADJ:0 "Jubahan"
+
+ PEN:0 "Tanakoji Merchant Republic"
+ PEN_DEF:0 "the Tanakoji Merchant Republic"
+ PEN_ADJ:0 "Wurtumese"
+
+ SOU:0 "Imoji Dynasty"
+ SOU_DEF:0 "the Imoji Dynasty of Wurtum"
+ SOU_ADJ:0 "Wurtumese"
+
+ QUA:0 "Qualgong"
+ QUA_DEF:0 "the Qualgong Council"
+ QUA_ADJ:0 "Wurtumese"
+
+ MLJ:0 "Mei Lung"
+ MLJ_DEF:0 "the Mei Lung Junta"
+ MLJ_ADJ:0 "Wurtumese"
+
+ KCU:0 "Khatari City Union"
+ KCU_DEF:0 "the Khatari City Union"
+ KCU_ADJ:0 "Wurtumese"
+
+ SWS:0 "Shou Wei Society"
+ SWS_DEF:0 "the Shou Wei Society of Wurtum"
+ SWS_ADJ:0 "Wurtumese"
+
+ CON:0 "Congwang Hordes"
+ CON_DEF:0 "the Congwang Hordes"
+ CON_ADJ:0 "Wurtumese"
+
+ CKM:0 "Chokyo Kaga Monk Rebellion"
+ CKM_DEF:0 "the Chokyo Kaga Monk Rebellion"
+ CKM_ADJ:0 "Wurtumese"
+
+ BAE:0 "Kingdom of Baeliff"
+ BAE_DEF:0 "the Kingdom of Baeliff"
+ BAE_ADJ:0 "Kallonian"
+
+ ARD:0 "Kingdom of Ardiff"
+ ARD_DEF:0 "the Kingdom of Ardiff"
+ ARD_ADJ:0 "Kallonian"
+
+ ARB:0 "Kingdom of Arbindrothnia"
+ ARB_DEF:0 "the Kingdom of Arbindrothnia"
+ ARB_ADJ:0 "Kallonian"
+
+ SIN:0 "Kingdom of Sinostria"
+ SIN_DEF:0 "the Kingdom of Sinostria"
+ SIN_ADJ:0 "Kallonian"
+
+ SAU:0 "Kingdom of Sausinia"
+ SAU_DEF:0 "the Kingdom of Sausinia"
+ SAU_ADJ:0 "Kallonian"
+
+ HAL:0 "Kingdom of Hallaxia"
+ HAL_DEF:0 "the Kingdom of Hallaxia"
+ HAL_ADJ:0 "Kallonian"
+
+ THE:0 "Kingdom of Thenithria"
+ THE_DEF:0 "the Kingdom of Thenithria"
+ THE_ADJ:0 "Kallonian"
+
+ LOE:0 "Kingdom of Lorenthia"
+ LOE_DEF:0 "the Kingdom of Lorenthia"
+ LOE_ADJ:0 "Kallonian"
+
+ CAR:0 "Kingdom of Carentea"
+ CAR_DEF:0 "the Kingdom of Carentea"
+ CAR_ADJ:0 "Kallonian"
+
+ ARI:0 "Kingdom of Arindroxia"
+ ARI_DEF:0 "the Kingdom of Arindroxia"
+ ARI_ADJ:0 "Kallonian"
+
+ FED:0 "Third Federation"
+ FED_DEF:0 "the Third Federation of Aeloen"
+ FED_ADJ:0 "Aeloenic"
+
+ ALB:0 "Kingdom of Albios"
+ ALB_DEF:0 "the Kingdom of Albios"
+ ALB_ADJ:0 "Aeloenic"
+
+ AEO:0 "Kingdom of Aelo Senkaris"
+ AEO_DEF:0 "the Kingdom of Aelo Senkaris"
+ AEO_ADJ:0 "Aeloenic"
+
+ MYK:0 "Kingdom of Mykhos"
+ MYK_DEF:0 "the Kingdom of Mykhos"
+ MYK_ADJ:0 "Mykhosian"
+
+ ILA:0 "Kingdom of Ilakir"
+ ILA_DEF:0 "the Kingdom of Ilakir"
+ ILA_ADJ:0 "Afanan"
+
+ NDU:0 "Kingdom of Nordundur"
+ NDU_DEF:0 "the Kingdom of Nordundur"
+ NDU_ADJ:0 "Aungmarian"
