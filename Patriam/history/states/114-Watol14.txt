@@ -1,8 +1,12 @@
 state={
 	id=114
 	name="STATE_114"
+	history = {
+		   owner = ALX
+
+	}
 	provinces={
-		436 3084 3695 6889 6927 
+		436 3084 3695 6889 6927
 	}
 	manpower=0
 	buildings_max_level_factor=1.000

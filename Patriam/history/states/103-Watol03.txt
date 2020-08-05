@@ -2,8 +2,12 @@
 state={
 	id=103
 	name="STATE_103"
+	history = {
+	   owner = QUI
+
+}
 	provinces={
-		1120 1867 2309 2478 2527 2750 3416 4801 6839 6854 
+		1120 1867 2309 2478 2527 2750 3416 4801 6839 6854
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
