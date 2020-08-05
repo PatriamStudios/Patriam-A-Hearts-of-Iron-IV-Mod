@@ -4,13 +4,13 @@ state={
 	name="STATE_110"
 
 	history={
-		owner = NOR
-		add_core_of = NOR
+
+
 
 	}
 
 	provinces={
-		709 915 1812 2880 4341 6507 6534 
+		709 915 1812 2880 4341 6507 6534
 	}
 	manpower=0
 	buildings_max_level_factor=1.000

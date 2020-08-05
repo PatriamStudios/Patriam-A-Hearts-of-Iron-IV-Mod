@@ -1,8 +1,12 @@
 state={
 	id=507
 	name="STATE_507"
+	history = {
+		   owner = QUI
+
+	}
 	provinces={
-		1208 2269 4052 4363 6948 6955 
+		1208 2269 4052 4363 6948 6955
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
